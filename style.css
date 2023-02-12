@@ -63,6 +63,7 @@ table {
   --remove-text:#BBBBBB;
   --total-text:#0E0E0E;
   --modal-input-text:#757575;
+  --completion-text-bg:#ECFDF5;
   --order-complete-text:#065F46;
   --order-complete-bg:#ECFDF5;
   --standard-font-size:16px;
@@ -90,8 +91,19 @@ button{
   margin-left:auto;
 }
 
+.red-bg{
+  background-color:rgba(255, 0, 0, .5);
+  color:darkred;
+  padding:5px 5px;
+  border-radius:3.89px;
+}
+
 .content-container{
   margin:0 24.38px;
+}
+
+.--app-app-container{
+  margin-bottom:34px;
 }
 
 header{
@@ -206,7 +218,7 @@ header{
   color:var(--total-text);
 }
 
-.--order-complete{
+.--restaurant-btn{
   display:block;
   margin:0 auto;
   padding:22px 0;
@@ -215,6 +227,55 @@ header{
   font-size:16px;
   background-color:var(--btn-color);
   color:var(--white);
+}
+
+.--modal{
+  position: fixed;
+  margin:auto;
+  top:80px;
+  left:0;
+  right:0;
+  width:310px;
+  background-color:var(--white);
+  border-radius:3.89px;
+  border:1px solid var(--black);
+  font-family: var(--secondary-font);
+  font-size:24px;
+  padding:46px 0px;
+}
+
+.modal-content-container{
+  margin:0px 23px;
+}
+
+.--modal-title{
+  margin-bottom:34px;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+}
+
+.--modal-input{
+  margin:11.61px 0;
+  font-family: var(--secondary-font);
+  font-size:20px;
+  color:var(--modal-input-text);
+  border-radius:3.89px;
+  padding:25.5px;
+}
+
+.--modal-btn{
+  margin-top:34px;
+  border-radius:3.89px;
+}
+
+.--completion-text{
+  background-color: var(--order-complete-bg);
+  color:var(--order-complete-text);
+  font-size:32px;
+  padding:44px 10px;
 }
 
 @media screen and (min-width:600px) {
@@ -279,4 +340,11 @@ header{
     font-size:20px;
   }
 
+  .--modal{
+    width:524px;
+  }
+
+  .--completion-text{
+    padding:44px 0px;
+  }
 }

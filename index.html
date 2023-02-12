@@ -31,6 +31,23 @@
             </div>
           </div>
         </section>
+        <section id="modal" class="--modal hidden">
+          <div class="modal-content-container">
+            <h1 id="modal-title" class="--modal-title text-center">Enter Card Details</h1>
+            <p id="error-message" class="--modal-error red-bg text-center hidden">One or more inputs is incorrect</p>
+            <form id="modal-form">
+              <input id="cardInfo-name" class="--modal-input" type="text" placeholder="Enter your name" required>
+              <input id="cardInfo-number" class="--modal-input" type="text" placeholder="Enter card number" required>
+              <input id="cardInfo-ccv" class="--modal-input" type="text" placeholder="Enter CVV" required>
+              <button type="submit" id="modal-btn" class="--restaurant-btn text-center --modal-btn" data-card="modal-form">Pay</button>
+            </form>
+          </div>
+        </section>
+        <section id="completion" class="--completion hidden">
+          <div class="content-container">
+            <h1 id="completion-text" class="--completion-text text-center">Thanks James! Your order is on it's way</h1>
+          </div>
+        </section>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
